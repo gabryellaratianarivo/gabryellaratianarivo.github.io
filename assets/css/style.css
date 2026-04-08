@@ -1188,3 +1188,8 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+
+.skills .progress-bar {
+  background: linear-gradient(90deg, #18d26e, #39f390);
+}
