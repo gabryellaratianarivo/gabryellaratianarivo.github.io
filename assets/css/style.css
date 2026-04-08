@@ -1193,3 +1193,20 @@ section .container {
 .skills .progress-bar {
   background: linear-gradient(90deg, #18d26e, #39f390);
 }
+
+.icon-box {
+  min-height: 180px;      /* même hauteur pour tous les blocs */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;          /* espace intérieur */
+  border-radius: 10px;    /* coins arrondis si tu veux */
+  background: #f8f9fa;    /* léger fond pour mieux voir les blocs */
+  transition: transform 0.3s;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+}
