@@ -1195,15 +1195,15 @@ section .container {
 }
 
 .icon-box {
-  min-height: 180px;      /* même hauteur pour tous les blocs */
+  min-height: 180px;        /* même hauteur pour tous les blocs */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;          /* espace intérieur */
-  border-radius: 10px;    /* coins arrondis si tu veux */
-  background: #f8f9fa;    /* léger fond pour mieux voir les blocs */
+  padding: 20px;            /* espace intérieur */
+  border-radius: 10px;      /* coins arrondis si tu veux */
+  background: #f8f9fa;      /* léger fond pour mieux voir les blocs */
   transition: transform 0.3s;
 }
 
