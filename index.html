@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Personal Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Gabryella Ratianarivo | Data Scientist & Telecommunication Engineer</title>
+  <meta name="description" content="Gabryella Ratianarivo - Data Scientist and Telecommunication Engineer from Madagascar. Portfolio showcasing projects in Data Science, Machine Learning, Networking, Cybersecurity and Astronomy.">
+  <meta name="keywords" content="Gabryella Ratianarivo, Data Scientist, Telecommunications Engineer, Machine Learning, Networking, Astronomy, Madagascar">
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -46,7 +47,7 @@
       <h1><a href="index.html">Gabryella Ratianarivo</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate about <span>technology</span> from Madagascar</h2>
+      <h2>I'm a passionate about <span>technology and innovation</span> from Madagascar</h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -85,7 +86,7 @@
           <img src="assets/img/me.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Data scientist & Telecommunication Engineer</h3>
+          <h3>Data Scientist | Telecommunication Engineer | Aspiring Researcher</h3>
           <p class="fst-italic">
             Data Scientist and Telecommunication Engineer with a strong background in networking, machine learning, and IT systems. 
 Passionate about cybersecurity, data analysis, and innovative technologies. 
@@ -663,6 +664,7 @@ Motivated to contribute to impactful and technology-driven projects.
 
 <script>
   const form = document.getElementById('contact-form');
+
   const loading = form.querySelector('.loading');
   const errorMessage = form.querySelector('.error-message');
   const sentMessage = form.querySelector('.sent-message');
@@ -673,18 +675,21 @@ Motivated to contribute to impactful and technology-driven projects.
     errorMessage.style.display = 'none';
     sentMessage.style.display = 'none';
 
+
     const formData = new FormData(form);
 
     try {
       const response = await fetch(form.action, {
         method: form.method,
         body: formData,
+
         headers: { 'Accept': 'application/json' }
       });
 
       loading.style.display = 'none';
 
       if (response.ok) {
+
         sentMessage.style.display = 'block';
         form.reset(); // Réinitialise le formulaire
       } else {
@@ -694,7 +699,9 @@ Motivated to contribute to impactful and technology-driven projects.
       }
     } catch (error) {
       loading.style.display = 'none';
+
       errorMessage.textContent = 'An error occurred. Please try again.';
+
       errorMessage.style.display = 'block';
     }
   });
